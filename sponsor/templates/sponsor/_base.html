@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/css/tabler.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        {% include 'sponsor/widgets/headers.html' %}
+        <div class="page-wrapper">
+          <div class="page-body pb-1">
+            <div class="d-flex justify-content-center align-items-center">
+              {% block content %}
+              
+              {% endblock content %}
+               
+             </div>
+          </div>
+          {% include 'sponsor/widgets/footer.html' %}
+        </div>
+      </div>
+      <script src="https://unpkg.com/@tabler/core@1.0.0-beta10/dist/js/tabler.min.js"></script>
+</body>
+</html>
